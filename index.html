@@ -1,0 +1,40 @@
+<div class="container">
+    <div id="homePage" class="card">
+        <h1>😂 Prank Your Friend By Their Name 😂</h1>
+        <p>Enter your friend's name and generate a prank link.</p>
+        <input type="text" id="friendName" placeholder="Enter Friend Name">
+        <button class="btn" onclick="generateLink()">
+            Generate Link
+        </button>
+        <div class="link-box" id="linkBox">
+            <div id="generatedLink"></div>
+            <button class="btn copy-btn" onclick="copyLink()">
+                Copy Link
+            </button>
+            <div class="success" id="successMsg">
+                Link copied successfully!
+            </div>
+        </div>
+    </div>
+    <div id="questionPage" class="card hidden">
+        <h1>Will you marry me? 💍</h1>
+        <div class="choice-btns">
+            <button class="yes" onclick="startPrank()">Yes ❤️</button>
+            <button class="no" onclick="startPrank()">No 💔</button>
+        </div>
+    </div>
+    <div id="loadingPage" class="card hidden">
+        <div class="loading"></div>
+        <h2 style="margin-top:20px;">Processing...</h2>
+    </div>
+    <div id="resultPage" class="card hidden">
+        <img
+        class="gorilla"
+        src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800"
+        alt="gorilla">
+        <div class="result-text" id="resultText"></div>
+        <button class="arrow-btn" onclick="goHome()">
+            ⬇️
+        </button>
+    </div>
+</div>
