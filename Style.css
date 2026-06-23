@@ -1,0 +1,154 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+overflow:hidden;
+color:white;
+}
+.container{
+width:100%;
+max-width:500px;
+padding:20px;
+}
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.15);
+border-radius:25px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+animation:fadeIn .6s ease;
+}
+h1{
+font-size:2rem;
+margin-bottom:15px;
+}
+p{
+opacity:.85;
+margin-bottom:20px;
+}
+input{
+width:100%;
+padding:15px;
+border:none;
+border-radius:15px;
+outline:none;
+font-size:16px;
+margin-bottom:15px;
+}
+.btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+color:white;
+font-size:16px;
+font-weight:bold;
+background:linear-gradient(45deg,#ff416c,#ff4b2b);
+transition:.3s;
+}
+.btn:hover{
+transform:translateY(-3px);
+}
+.link-box{
+margin-top:20px;
+padding:15px;
+border-radius:12px;
+background:rgba(255,255,255,.08);
+word-break:break-all;
+display:none;
+}
+.copy-btn{
+margin-top:10px;
+}
+.success{
+color:#00ff88;
+margin-top:10px;
+display:none;
+}
+.hidden{
+display:none;
+}
+.choice-btns{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+.choice-btns button{
+flex:1;
+padding:18px;
+border:none;
+border-radius:15px;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+.choice-btns button:hover{
+transform:scale(1.05);
+}
+.yes{
+background:linear-gradient(45deg,#00c853,#64dd17);
+color:white;
+}
+.no{
+background:linear-gradient(45deg,#ff1744,#ff5252);
+color:white;
+}
+.loading{
+width:80px;
+height:80px;
+border:8px solid rgba(255,255,255,.2);
+border-top:8px solid white;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:auto;
+}
+.gorilla{
+width:100%;
+max-width:300px;
+border-radius:20px;
+animation:popIn .8s ease;
+}
+.result-text{
+font-size:2rem;
+font-weight:900;
+margin-top:20px;
+}
+.arrow-btn{
+width:90px;
+height:90px;
+border-radius:50%;
+border:none;
+margin-top:25px;
+background:red;
+color:white;
+font-size:45px;
+cursor:pointer;
+animation:bounce 1.2s infinite;
+}
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+@keyframes popIn{
+from{transform:scale(0);opacity:0;}
+to{transform:scale(1);opacity:1;}
+}
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
