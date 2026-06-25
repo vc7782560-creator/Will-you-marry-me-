@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>3D Evolution IO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-container">
+        <div id="leaderboard" class="glass-panel">
+            <h3>Leaderboard</h3>
+            <div id="leaderboard-list"></div>
+        </div>
+        <div id="score-box" class="glass-panel">Score: <span id="score">0</span></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+    </script>
+    <script type="module" src="client.js"></script>
+</body>
+</html>
